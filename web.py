@@ -34,6 +34,8 @@ class WebRequestHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"<h1>404 - Ruta no encontrada</h1>")
 
+
+
 if __name__ == "__main__":
     print("Starting server")
     server = HTTPServer(("localhost", 8000), WebRequestHandler)
